@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The SISB Ministry of Needless Bollocks: an official register of management tasks that create work rather than value.">
+  <meta name="theme-color" content="#111d34">
+  <title>SISB Ministry of Needless Bollocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%23111d34'/%3E%3Cpath d='M14 14h36v36H14z' fill='%23fff8df' stroke='%23d83b31' stroke-width='4'/%3E%3Cpath d='m21 32 7 7 15-17' fill='none' stroke='%23111d34' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="classification-bar">
+    <span>INTERNAL // NEED-TO-GROAN BASIS</span>
+    <span>CIRCULAR NO. 404 — VALUE NOT FOUND</span>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Ministry homepage">
+      <span class="wordmark-seal">SISB</span>
+      <span>Strategic Initiative Intake<br>&amp; Containment Unit</span>
+    </a>
+    <button class="settings-button" id="openSettings" type="button" aria-label="Open GitHub sync settings">
+      <span aria-hidden="true">⚙</span> System access
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-code">FORM MNB-01 / MANDATORY COMPLIANCE</p>
+        <h1><span>The Ministry of</span> Needless Bollocks</h1>
+        <p class="hero-decree">Officially recording every new task, strategic brainwave and beautifully formatted waste of everybody’s time.</p>
+      </div>
+      <div class="hero-stamp" aria-label="Purpose unknown">
+        <span>MANDATORY</span>
+        <strong>PURPOSE<br>UNKNOWN</strong>
+        <small>MANAGEMENT APPROVED</small>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Bureaucracy statistics">
+      <article>
+        <span class="metric-code">MNB–01</span>
+        <strong id="directiveCount">0</strong>
+        <p>Directives endured</p>
+      </article>
+      <article>
+        <span class="metric-code">MNB–02</span>
+        <strong id="meetingCount">0</strong>
+        <p>Meetings spawned</p>
+      </article>
+      <article>
+        <span class="metric-code">MNB–03</span>
+        <strong><span id="tickRate">0</span><small>%</small></strong>
+        <p>Tick-box purity</p>
+      </article>
+      <article class="metric-alert">
+        <span class="metric-code">MNB–04</span>
+        <strong><span id="averageScore">—</span><small>/5</small></strong>
+        <p>Average bullshit</p>
+      </article>
+    </section>
+
+    <div class="sync-notice" id="syncNotice" role="status">
+      <span><b>LOCAL FILING CABINET:</b> records are only stored in this browser.</span>
+      <button type="button" id="noticeSettings">Connect central bureaucracy</button>
+    </div>
+
+    <section class="workspace">
+      <aside class="intake-panel">
+        <div class="panel-heading">
+          <span class="panel-index">A</span>
+          <div>
+            <p>Compulsory submission</p>
+            <h2>File new nonsense</h2>
+          </div>
+        </div>
+
+        <form id="directiveForm">
+          <label class="field">
+            <span>1. Which muppet gave us this task?</span>
+            <input id="muppet" name="muppet" type="text" maxlength="80" placeholder="Name, title or protective nickname" required>
+          </label>
+
+          <label class="field">
+            <span>2. What extra crap do we need to do now?</span>
+            <textarea id="extraCrap" name="extraCrap" maxlength="800" rows="5" placeholder="Describe the latest bold new way of achieving absolutely nothing…" required></textarea>
+            <small>Be concise. Unlike the original instructions.</small>
+          </label>
+
+          <fieldset class="field">
+            <legend>3. Did this come with a pointless meeting?</legend>
+            <div class="choice-grid three-options">
+              <label><input type="radio" name="meeting" value="No" required><span>No</span></label>
+              <label><input type="radio" name="meeting" value="Yes"><span>Yes</span></label>
+              <label><input type="radio" name="meeting" value="Of course it did"><span>Of course it did</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>4. Tick box exercise?</legend>
+            <div class="choice-grid three-options">
+              <label><input type="radio" name="tickBox" value="No" required><span>No</span></label>
+              <label><input type="radio" name="tickBox" value="Yes"><span>Yes</span></label>
+              <label><input type="radio" name="tickBox" value="The box is the task"><span>The box is the task</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field meter-field">
+            <legend>5. Bullshit Meter</legend>
+            <div class="meter-options">
+              <label><input type="radio" name="score" value="1" required><span><b>1</b><small>Possibly useful if designed better.</small></span></label>
+              <label><input type="radio" name="score" value="2"><span><b>2</b><small>Bullshit.</small></span></label>
+              <label><input type="radio" name="score" value="3"><span><b>3</b><small>Elora made up some more stupid crap.</small></span></label>
+              <label><input type="radio" name="score" value="4"><span><b>4</b><small>No-one even knows why we’re doing this.</small></span></label>
+              <label><input type="radio" name="score" value="5"><span><b>5</b><small>Jesus, not Roneth again.</small></span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit">
+              <span id="submitText">Register this nonsense</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+            <button class="secondary-button" id="cancelEdit" type="button" hidden>Cancel amendment</button>
+          </div>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </aside>
+
+      <section class="register-panel">
+        <div class="panel-heading register-heading">
+          <span class="panel-index">B</span>
+          <div>
+            <p>Permanent public record</p>
+            <h2>Directive register</h2>
+          </div>
+          <button class="refresh-button" id="refreshData" type="button">↻ Refresh register</button>
+        </div>
+
+        <div id="directiveList" class="directive-list" aria-live="polite"></div>
+
+        <div class="empty-state" id="emptyState">
+          <div class="empty-mark">✓</div>
+          <h3>No unnecessary directives detected</h3>
+          <p>This is almost certainly a temporary administrative error.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <span>MINISTRY OF NEEDLESS BOLLOCKS © THE CURRENT REGIME</span>
+    <span>Operational security: use nicknames. The internet has eyes.</span>
+  </footer>
+
+  <dialog id="settingsDialog">
+    <form class="settings-card" id="settingsForm">
+      <div class="settings-header">
+        <div>
+          <p>Restricted systems</p>
+          <h2>Central filing access</h2>
+        </div>
+        <button class="close-button" id="closeSettings" type="button" aria-label="Close settings">×</button>
+      </div>
+      <p class="settings-copy">Connect this browser to GitHub so records are saved to <code>directives.json</code>. Visitors can read the register; only connected browsers can add, edit or delete it.</p>
+
+      <label class="field">
+        <span>GitHub username / organisation</span>
+        <input id="githubOwner" type="text" autocomplete="off" placeholder="e.g. alexhay-SISB" required>
+      </label>
+      <label class="field">
+        <span>Repository name</span>
+        <input id="githubRepo" type="text" autocomplete="off" placeholder="SISB_ministry_of_needless_bollocks" required>
+      </label>
+      <label class="field">
+        <span>Branch</span>
+        <input id="githubBranch" type="text" autocomplete="off" value="main" required>
+      </label>
+      <label class="field">
+        <span>Fine-grained access token</span>
+        <input id="githubToken" type="password" autocomplete="off" placeholder="github_pat_…" required>
+        <small>Give it “Contents: Read and write” access to this repository only. It remains in this browser.</small>
+      </label>
+
+      <div class="settings-actions">
+        <button class="secondary-button" id="disconnectSync" type="button">Revoke local access</button>
+        <button class="primary-button compact" type="submit">Save &amp; test connection</button>
+      </div>
+      <p class="form-message" id="settingsMessage" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <template id="directiveTemplate">
+    <article class="directive-card">
+      <header class="directive-card-header">
+        <div>
+          <span class="directive-number"></span>
+          <time class="directive-date"></time>
+        </div>
+        <div class="meter-badge"><span class="meter-value"></span>/5</div>
+      </header>
+      <div class="directive-body">
+        <p class="issued-label">ISSUED BY</p>
+        <h3 class="directive-muppet"></h3>
+        <p class="directive-crap"></p>
+        <div class="directive-tags">
+          <span class="meeting-tag"></span>
+          <span class="tick-tag"></span>
+        </div>
+        <div class="bullshit-reading">
+          <div class="reading-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="score-description"></p>
+        </div>
+        <div class="record-actions" hidden>
+          <button class="record-button edit-action" type="button" data-action="edit">Amend record</button>
+          <button class="record-button delete-action" type="button" data-action="delete">Shred evidence</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
